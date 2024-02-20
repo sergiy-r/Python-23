@@ -63,3 +63,24 @@ words = ["banana", "apple", "cherry"]
 words.sort(key=len, reverse=True)  # sort by length in reverse order
 print(words)  # Виведе ['apple', 'banana', 'cherry']
 
+
+# Задачі:
+
+# Маючи два списки my_list і some_data, використайте метод extend, щоб додати всі елементи зі списку some_data
+# до кінця списку my_list.
+# Використайте метод insert, щоб додати рядок 'Python' на позицію з індексом 1 у списку my_list.
+# Використайте метод reverse, щоб розвернути порядок елементів у списку my_list.
+# Очікуваний результат:
+# Після виконання програми, список my_list повинен відображати вказані зміни.
+
+print('************')
+my_list = [2024, 3.12]
+some_data = ['Python']
+print(my_list)
+my_list.extend(some_data)
+print(my_list)
+my_list.insert(1,'Python')
+print(my_list)
+my_list.reverse()
+print(my_list)
+
