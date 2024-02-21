@@ -61,11 +61,12 @@ print(a.union(b))  # {1, 2, 3, 4, 5}
 print(a | b)  # {1, 2, 3, 4, 5}
 print('-----')
 
-# frozen sets - the set in immutable, i.e.
+# frozen sets - the set in immutable, i.e. it cannot be changed, but you can stil
 union = a | b  # Об'єднання множин
 intersection = a & b  # Перетин множин
 difference = a - b  # Різниця множин
 symmetric_difference = a ^ b  # Симетрична різниця
+# the above statements will result in a new frozen set being created
 
 print(union)  # frozenset({1, 2, 3, 4, 5})
 print(intersection)  # frozenset({3})
