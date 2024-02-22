@@ -21,3 +21,6 @@ print(my_tuple, type(my_tuple))
 
 my_tuple = 'a', 'b', 'c'  # tuple can be created without the use of round brackets
 print(my_tuple, type(my_tuple))
+
+first_item = my_tuple[0]  # get first element
+print(first_item)
