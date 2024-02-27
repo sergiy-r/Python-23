@@ -4,8 +4,8 @@
 #  В іншому випадку виводить саме число.
 
 num = int(input('Enter a number to be evaluated: '))
-factor_1 = 2
-factor_2 = 3
+factor_1 = int(input('Enter factor 1: '))
+factor_2 = int(input('Enter factor 2: '))
 print(f"Factor 1: {factor_1}")
 print(f"Factor 2: {factor_2}")
 
