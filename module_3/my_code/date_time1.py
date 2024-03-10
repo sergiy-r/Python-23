@@ -29,3 +29,14 @@ time_part = datetime.time(12, 30, 15)
 combined_datetime = datetime.datetime.combine(date_part, time_part)
 
 print(combined_datetime)  # Виведе "2023-12-14 12:30:15"
+
+from datetime import date, time, datetime
+today = date.today()
+print(today)
+
+now = datetime.now()
+print(now)
+
+current_time = time(now.hour, now.minute, now.second)
+print(datetime.combine(today, current_time))
+

@@ -124,3 +124,11 @@ timezone_datetime = datetime(year=2023, month=3, day=14, hour=12, minute=30, sec
 iso_format_with_timezone = timezone_datetime.isoformat()
 print(iso_format_with_timezone)
 
+print('----')
+from datetime import datetime, timezone
+
+local_now = datetime.now()
+utc_now = datetime.now(timezone.utc)
+
+print(local_now)
+print(utc_now)  # Виведе поточний час в UTC
