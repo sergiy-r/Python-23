@@ -1,4 +1,4 @@
-# Module 3 Exercise 3
+# Module 3 Exercise 4
 # Author: Sergiy R
 
 # def get_upcoming_birthdays(users:list) -> list:
