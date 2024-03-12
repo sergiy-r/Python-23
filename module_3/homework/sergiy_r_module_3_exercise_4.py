@@ -42,9 +42,6 @@ def get_upcoming_birthdays(users:list) -> list:
 
     return users_congrats_next_7_days
 
-    #print(f"List of upcoming birthdays: \n{users_congrats_next_7_days}")
-
-
 # create users
 
 users = [
