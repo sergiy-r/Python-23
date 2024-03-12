@@ -3,7 +3,7 @@
 
 def get_upcoming_birthdays(users:list) -> list:
     # This function takes a list of dictionaries with 'name' and 'birthday' and returns a list of dictionaries
-    # with 'name' and 'congratulation_date'
+    # with 'name' and 'congratulation_date' for users' birthdays today or in the next 7 days.
 
     from datetime import datetime, timedelta
     today = datetime.today().date()
