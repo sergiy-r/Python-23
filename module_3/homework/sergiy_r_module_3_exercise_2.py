@@ -41,4 +41,4 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
     return selected_numbers  # output selected numbers
 
 
-print(get_numbers_ticket(1, 100, 4))
+print(get_numbers_ticket(1, 1000, 4))

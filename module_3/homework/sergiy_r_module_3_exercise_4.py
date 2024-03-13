@@ -17,7 +17,7 @@ def get_upcoming_birthdays(users:list) -> list:
         birthday = datetime.strptime(user["birthday"], "%Y.%m.%d").date()
 
         # replace year in birthday to current year
-        birthday_this_year = birthday.replace(year=today.year)  # .date()?
+        birthday_this_year = birthday.replace(year=today.year)
 
         # calculate number of days to birthday this year
         days_to_birthday = (birthday_this_year - today).days
