@@ -7,6 +7,8 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
     # where 1>= min < max, max <= 1000 and 'quantity' <= (max - min). If conditions are met, a sorted list is returned.
     # Otherwise, an empty list is returned.
 
+    import random  # import random module
+
     try:
         if min < 1:  # check if min < 1
             print("The 'min' parameter cannot be lower than 1.")
@@ -25,7 +27,6 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
             selected_numbers = []
 
         else:  # input parameters satisfy conditions
-            import random
 
             population = set(
                 (range(min, max + 1)))  # create a set for with lower limit of 'min' and upper limit of 'max'
