@@ -1,5 +1,5 @@
-# This function generates a password from ASCI characters, numbers, and punctuation marks.
-# The user sets the length of passwords and characters to be excluded
+# This function generates a password from ASCII characters, numbers, and punctuation marks.
+# The user enters the length of the password and may provide characters that need to be excluded.
 
 def passw_gen(passw_length: int, exclude_str: str) -> str:
 
@@ -26,8 +26,7 @@ def passw_gen(passw_length: int, exclude_str: str) -> str:
 
 
 num_char = int(input('Enter the number of characters in the password: '))
-exclude_str = input('Enter characters to be excluded, separated by commas: ')
+exclude_str = input("Enter characters that need to be excluded, separated by commas, otherwise press 'Enter': ")
 
 
-print(passw_gen(num_char, exclude_str))
-
+print('New password: ', passw_gen(num_char, exclude_str))
