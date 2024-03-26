@@ -4,14 +4,14 @@ baz = int(input('Enter a number baz: '))
 foo = int(input('Enter a number foo: '))
 
 # if baz < foo:
-#     temp = baz
+#     temp.txt = baz
 #     baz = (baz + foo) / 2
-#     foo = temp * foo
+#     foo = temp.txt * foo
 #
 # else:
-#     temp = foo
+#     temp.txt = foo
 #     foo = (foo +baz) / 2
-#     baz = temp * baz
+#     baz = temp.txt * baz
 
 if baz < foo:
     baz, foo = (baz + foo) / 2, baz * foo
