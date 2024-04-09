@@ -199,7 +199,7 @@ class Dog(Animal):
         return "Woof"
 
     def who_is_owner(self):
-        return self.owner()
+        return self.owner.info()
 
 
 owner = Owner("Sherlock", 24, "London, 221B Baker Street")
@@ -208,3 +208,47 @@ print("\n", "*" * 15, " ", "Exercise 7", " ", "*" * 15, "\n")
 print(dog.nickname, dog.breed, dog.weight, dog.say())
 print(owner.name, owner.age, owner.address)
 print(cat.nickname, cat.weight, cat.breed, cat.owner.name, cat.owner.address)
+print(dog.who_is_owner())
+
+
+# Exercise 8
+"""
+Створіть два класи: CatDog та DogCat. Ці класи повинні наслідуватись від двох класів відразу: Cat та Dog. Після 
+успадкування в екземпляра класу CatDog, батьківський метод say повинен повертати "Meow", а у класу DogCat — "Woof". 
+Для обох зазначених класів реалізуйте метод info, який повертає рядок у наступному форматі 
+f"{self.nickname}-{self.weight}".
+"""
+print("\n", "*" * 15, " ", "Exercise 8", " ", "*" * 15, "\n")
+
+class Animal:
+    def __init__(self, nickname, weight):
+        self.nickname = nickname
+        self.weight = weight
+
+    def say(self):
+        pass
+
+
+class Cat(Animal):
+    def say(self):
+        return "Meow"
+    def info(self):
+
+        f"{self.nickname}-{self.weight}"
+
+
+class Dog(Animal):
+    def say(self):
+        return "Woof"
+
+class CatDog(Cat, Dog):
+    def say(self):
+        return super().say()
+    def info(self):
+        return f"{self.nickname}-{self.weight}"
+
+class DogCat(Dog, Cat):
+    def say(self):
+        return super().say()
+    def info(self):
+        return f"{self.nickname}-{self.weight}"
