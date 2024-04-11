@@ -46,11 +46,11 @@ def get_upcoming_birthdays(users:list) -> list:
 
 users = [
     {"name": "John Doe", "birthday": "1985.01.23"},
-    {"name": "Jane Smith", "birthday": "1990.01.27"},
-    {"name": "Bob Dyson", "birthday": "1987.03.16"},
-    {"name": "Marta Stewart", "birthday": "1990.03.22"},
-    {"name": "Teresa Torres", "birthday": "1980.03.18"},
-    {"name": "Alice Braga", "birthday": "1980.03.17"}
+    {"name": "Jane Smith", "birthday": "1990.04.17"},
+    {"name": "Bob Dyson", "birthday": "1987.04.16"},
+    {"name": "Marta Stewart", "birthday": "1990.04.12"},
+    {"name": "Teresa Torres", "birthday": "1980.04.10"},
+    {"name": "Alice Braga", "birthday": "1980.04.15"}
 ]
 
 print(f"List of upcoming birthdays: \n{get_upcoming_birthdays(users)}")
